@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.sy.mainactivity.ui.file.FileFragment"
+        android:name="com.sy.mainactivity.ui.file.BlankFragment"
         android:label="@string/title_file"
         tools:layout="@layout/fragment_aes" />
 

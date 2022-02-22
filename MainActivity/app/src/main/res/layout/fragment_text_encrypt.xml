@@ -78,19 +78,6 @@
         app:layout_constraintTop_toBottomOf="@+id/contentText"
         />
 
-    <!--ToggleButton
-        android:id="@+id/key_128"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textOff="Off"
-        android:textOn="On"
-        app:layout_constraintBottom_toTopOf="@+id/cipherText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contentText"
-        /-->
-
     <EditText
         android:id="@+id/cipherText"
         android:layout_width="match_parent"
