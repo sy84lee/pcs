@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class TextPagerAdapter(fragmentActivity: FragmentActivity): FragmentStateAdapter(fragmentActivity){
+class FilePagerAdapter(fragmentActivity: FragmentActivity): FragmentStateAdapter(fragmentActivity){
 
     var fragments : ArrayList<Fragment> = ArrayList()
 

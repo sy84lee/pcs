@@ -9,7 +9,7 @@
     android:layout_marginTop="16dp">
 
     <Spinner
-        android:id="@+id/hashalgo_spinner"
+        android:id="@+id/spinnerHashAlgo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -23,7 +23,7 @@
 
 
     <EditText
-        android:id="@+id/plainText"
+        android:id="@+id/editTextPlainText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -39,13 +39,13 @@
         android:maxLines="2"
         android:scrollbars="vertical"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/cipherText"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCipherText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hashalgo_spinner"/>
+        app:layout_constraintTop_toBottomOf="@+id/spinnerHashAlgo"/>
 
     <EditText
-        android:id="@+id/cipherText"
+        android:id="@+id/editTextCipherText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -61,14 +61,14 @@
         android:maxLines="10"
         android:scrollbars="vertical"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/plainText"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPlainText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         />
 
     <Button
-        android:id="@+id/confirmButton"
+        android:id="@+id/buttonGenerate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
