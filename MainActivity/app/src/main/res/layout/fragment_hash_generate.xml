@@ -8,7 +8,34 @@
     tools:context=".ui.hash.HashGeneratorFragment"
     android:layout_marginTop="16dp">
 
-    <Spinner
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spinnerHashAlgo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:boxStrokeColor="#FFBB86FC"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="Algorithm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewComboItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Spinner
         android:id="@+id/spinnerHashAlgo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,53 +46,69 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"/-->
 
-
-    <EditText
-        android:id="@+id/editTextPlainText"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutPlainText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:boxStrokeColor="#FFBB86FC"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:background="@drawable/input"
         android:hint="Plain Text"
         android:inputType="text|textMultiLine"
-        android:maxLines="2"
+        android:maxLines="10"
         android:scrollbars="vertical"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextCipherText"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutCipherText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerHashAlgo"/>
+        app:layout_constraintTop_toBottomOf="@+id/spinnerHashAlgo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    <EditText
-        android:id="@+id/editTextCipherText"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPlainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutCipherText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:background="@drawable/input"
+        app:boxStrokeColor="#FFBB86FC"
         android:hint="Hash Text"
         android:inputType="text|textMultiLine"
         android:maxLines="10"
         android:scrollbars="vertical"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPlainText"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPlainText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCipherText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/buttonGenerate"
