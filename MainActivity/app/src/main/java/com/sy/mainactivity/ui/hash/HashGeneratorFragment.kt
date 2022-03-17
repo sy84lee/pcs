@@ -15,7 +15,6 @@ import android.widget.ArrayAdapter as ArrayAdapter
 class HashGeneratorFragment : Fragment() {
     private var mBinding: FragmentHashGenerateBinding? = null
     private val binding get() = mBinding!!
-    private var spinnerHashAlgo: Spinner? = null
     private var editTextPT: EditText? = null
     private var editTextCT: TextInputEditText? = null
     private var buttonGenerate: Button? = null
