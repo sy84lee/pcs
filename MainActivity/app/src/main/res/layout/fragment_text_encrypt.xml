@@ -5,7 +5,8 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.file.TextEncryptFragment"
+    tools:context=".ui.cryptography.TextEncryptFragment"
+    android:background="#ffffff"
     android:layout_marginTop="16dp">
 
     <ScrollView
@@ -49,7 +50,7 @@
                     android:id="@+id/editTextKeyText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:lines="3"
+                    android:lines="1"
                     android:gravity="top"
                     />
             </com.google.android.material.textfield.TextInputLayout>
@@ -78,7 +79,7 @@
                     android:id="@+id/editTextPlainText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:lines="3"
+                    android:lines="1"
                     android:gravity="top"
                     />
             </com.google.android.material.textfield.TextInputLayout>
@@ -107,7 +108,7 @@
                     android:id="@+id/editTextIVText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:lines="3"
+                    android:lines="1"
                     android:gravity="top"
                     />
             </com.google.android.material.textfield.TextInputLayout>
@@ -137,7 +138,7 @@
                     android:id="@+id/editTextCipherText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:lines="3"
+                    android:lines="1"
                     android:gravity="top"
                     />
             </com.google.android.material.textfield.TextInputLayout>
@@ -147,6 +148,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
                 android:gravity="left"
                 android:text="Key Bits"
                 app:layout_constraintBottom_toTopOf="@+id/btnsModeCategory"
@@ -159,7 +161,7 @@
                 android:id="@+id/btnKeyBitsCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_marginLeft="15dp"
                 android:gravity="left"
                 android:minHeight="50dp"
                 app:checkedButton="@id/btnKeyBitsCategory128"
@@ -196,6 +198,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
                 android:gravity="left"
                 android:text="Key Bits"
                 app:layout_constraintBottom_toTopOf="@+id/btnsModeCategory"
@@ -208,7 +211,7 @@
                 android:id="@+id/btnsModeCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_marginLeft="15dp"
                 android:gravity="left"
                 android:minHeight="50dp"
                 app:checkedButton="@id/btnModeCategoryECB"
@@ -258,11 +261,11 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="80dp"
         android:text="Encrypt"
         app:layout_constraintTop_toBottomOf="@id/scrollViewMain"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

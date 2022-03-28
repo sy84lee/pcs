@@ -4,17 +4,12 @@
     <item
         android:id="@+id/navigation_hash"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="HASH" />
-
-    <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_text" />
+        android:title="Hash" />
 
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_file" />
+        android:title="Cryptography" />
 
     <item
         android:id="@+id/navigation_notifications"

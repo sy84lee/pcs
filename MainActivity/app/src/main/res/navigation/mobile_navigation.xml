@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.sy.mainactivity.ui.file.FileFragment"
+        android:name="com.sy.pcs.ui.cryptography.CryptographyFragment"
         android:label="@string/title_file"
         tools:layout="@layout/fragment_aes" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.sy.mainactivity.ui.text.TextFragment"
+        android:name="com.sy.pcs.ui.text.TextFragment"
         android:label="@string/title_text"
         tools:layout="@layout/fragment_text" />
 
     <fragment
         android:id="@+id/navigation_hash"
-        android:name="com.sy.mainactivity.ui.hash.HashFragment"
+        android:name="com.sy.pcs.ui.hash.HashFragment"
         android:label="HASH"
         tools:layout="@layout/fragment_hash" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.sy.mainactivity.ui.notifications.NotificationsFragment"
+        android:name="com.sy.pcs.ui.notifications.NotificationsFragment"
         android:label="@string/title_none"
         tools:layout="@layout/fragment_notifications" />
 </navigation>
